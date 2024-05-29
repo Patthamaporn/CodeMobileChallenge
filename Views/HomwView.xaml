@@ -3,10 +3,63 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CodeMobileChallenge.Views"
+        xmlns:local="clr-namespace:CodeMobileChallenge.ViewModels"
+        xmlns:helper="clr-namespace:CodeMobileChallenge.Helpers"
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </Page.Resources>
     <Grid>
-        <TextBlock Text="Welcome to Home View" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="10" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="ด้นหาชื่อสินค้า: " HorizontalAlignment="Right" />
+            <TextBox Grid.Column="1" Width="300" HorizontalAlignment="Left" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+        <ComboBox Grid.Row="1" Width="300" Margin="0 0 0 10" HorizontalAlignment="Right"
+          ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}" />
+        <DataGrid x:Name="ProductsDataGrid" Grid.Row="2" ItemsSource="{Binding FilteredProducts}" AutoGenerateColumns="False" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" EnableRowVirtualization="True" EnableColumnVirtualization="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding thumbnail}" Width="150" Height="150"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="ชื่อสินค้า" Binding="{Binding title}" Width="2*"/>
+                <DataGridTextColumn Header="ราคา" Binding="{Binding price}" Width="1*"/>
+                <DataGridTextColumn Header="สินค้าคงคลัง" Binding="{Binding stock}" Width="1*"/>
+                <DataGridTextColumn Header="ราคารวมต่อชิ้น" x:Name="test"
+                    Binding="{Binding totalPrice, StringFormat={}{0:N}}"
+                    Visibility="{Binding IsTotalPriceVisible, Converter={StaticResource BoolToVisibilityConverter}}"
+                    Width="1*" />
+
+
+                <DataGridTemplateColumn Header="" Width="1*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="รายละเอียด" Command="{Binding DataContext.DetailCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="3" Margin="10" >
+            <TextBlock Text="ราคารวมทั้งหมด: " FontWeight="Bold"/>
+            <TextBlock Text="{Binding TotalPrice, StringFormat={}{0:N}}" FontWeight="Bold"/>
+        </StackPanel>-->
+        <TextBlock Grid.Row="3" HorizontalAlignment="Right" Margin="10" Text="{Binding TotalPriceMessage}" FontWeight="Bold" />
     </Grid>
 </Page>

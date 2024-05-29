@@ -47,6 +47,7 @@ namespace CodeMobileChallenge.Models
             public Meta meta { get; set; }
             public List<string> images { get; set; }
             public string thumbnail { get; set; }
+            public double totalPrice { get; set; }
         }
 
         public class Review
@@ -57,8 +58,7 @@ namespace CodeMobileChallenge.Models
             public string reviewerName { get; set; }
             public string reviewerEmail { get; set; }
         }
-
-        public class Root
+        public class ProductResponse
         {
             public List<Product> products { get; set; }
             public int total { get; set; }
@@ -67,4 +67,5 @@ namespace CodeMobileChallenge.Models
         }
 
     }
+
 }
