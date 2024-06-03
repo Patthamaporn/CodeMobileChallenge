@@ -12,6 +12,9 @@ using System.Timers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
+using CodeMobileChallenge.Views;
+using System.Data;
+using System.Windows.Media;
 
 namespace CodeMobileChallenge.ViewModels
 {
@@ -98,11 +101,10 @@ namespace CodeMobileChallenge.ViewModels
         public ICommand ComboBoxSelectionChangedCommand { get; private set; }
         public ICommand ToggleTotalPriceVisibilityCommand { get; private set; }
         public ICommand DetailCommand { get; private set; }
-        private System.Timers.Timer searchTimer; // เพิ่ม Timer นี้
+        private System.Timers.Timer searchTimer;
 
         public HomeViewModel()
         {
-            IsTotalPriceVisible = false;
             Products = new ObservableCollection<Product>();
             FetchProducts();
             FilteredProducts = CollectionViewSource.GetDefaultView(Products);
@@ -124,6 +126,7 @@ namespace CodeMobileChallenge.ViewModels
             searchTimer.Interval = 1000; // 1 วินาที
             searchTimer.AutoReset = false; // ไม่ต้องเริ่มต้นนับเวลาอัตโนมัติ
             searchTimer.Elapsed += SearchTimer_Elapsed;
+            IsTotalPriceVisible = false;
         }
         private void ToggleTotalPriceVisibility()
         {
@@ -140,7 +143,6 @@ namespace CodeMobileChallenge.ViewModels
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Add("CMReq", "request");
-
                 try
                 {
                     HttpResponseMessage httpResponse = client.GetAsync("https://dummyjson.com/products").Result;
@@ -205,7 +207,7 @@ namespace CodeMobileChallenge.ViewModels
                     }
                     break;
                 case "แสดงราคารวมต่อชิ้น":
-                    CalculateTotalPricePerItem(FilteredProducts);
+                    ToggleTotalPriceVisibility();
                     break;
                 case "เรียงเรตติ้ง":
                     FilteredProducts.SortDescriptions.Add(new SortDescription(nameof(Product.rating), ListSortDirection.Descending));
@@ -250,26 +252,17 @@ namespace CodeMobileChallenge.ViewModels
             TotalPriceMessage = $"ราคารวมทั้งหมด: {string.Format("{0:N}", totalPrice)}";
         }
 
-        private void CalculateTotalPricePerItem(ICollectionView collectionView)
-        {
-            ToggleTotalPriceVisibility();
-            //if (collectionView != null)
-            //{
-            //    foreach (var item in collectionView)
-            //    {
-            //        if (item is Product product)
-            //        {
-            //            // คำนวณ totalPrice และกำหนดค่าให้กับ TotalPrice ของแต่ละสินค้า
-            //            product.totalPrice = product.price * product.stock;
-            //        }
-            //    }
-            //    ToggleTotalPriceVisibility();
-            //}
-        }
-
         private void ShowDetail(Product product)
         {
-            MessageBox.Show($"Showing details for {product.id}");
+            if (product != null)
+            {
+                MessageBox.Show($"Showing details for {product.title}");
+                DetailView detailView = new DetailView
+                {
+                    DataContext = new DetailViewModel(product.id)
+                };
+                Application.Current.MainWindow.Content = detailView;
+            }
         }
     }
 }

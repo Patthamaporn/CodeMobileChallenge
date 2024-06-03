@@ -66,7 +66,6 @@ namespace CodeMobileChallenge.ViewModels
                 MessageBox.Show($"Logged in successfull as {Email}");
                 HomeView homeView = new HomeView();
                 Application.Current.MainWindow.Content = homeView;
-                //homeView.ShowDialog();
             }
             else
             {

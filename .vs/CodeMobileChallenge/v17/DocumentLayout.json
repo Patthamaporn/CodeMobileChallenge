@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|c:\\users\\admin\\desktop\\codemobilechallenge\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|c:\\users\\admin\\desktop\\codemobilechallenge\\views\\homwview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:views\\homwview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|c:\\users\\admin\\desktop\\codemobilechallenge\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|c:\\users\\admin\\desktop\\codemobilechallenge\\helpers\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:helpers\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\views\\detailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:views\\detailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|c:\\users\\admin\\desktop\\codemobilechallenge\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B59990-2348-4B44-81AF-35B17DDC2F64}|CodeMobileChallenge.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,44 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Models\\ProductModel.cs",
-              "RelativeDocumentMoniker": "Models\\ProductModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Models\\ProductModel.cs",
-              "RelativeToolTip": "Models\\ProductModel.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwDEAAAAZAAAA",
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwEMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T21:17:43.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BoolToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Helpers\\BoolToVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "Helpers\\BoolToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Helpers\\BoolToVisibilityConverter.cs",
-              "RelativeToolTip": "Helpers\\BoolToVisibilityConverter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T20:57:56.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T19:53:02.44Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomwView.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\HomwView.xaml",
-              "RelativeDocumentMoniker": "Views\\HomwView.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\HomwView.xaml",
-              "RelativeToolTip": "Views\\HomwView.xaml",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\App.xaml",
+              "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-29T16:41:02.537Z",
+              "WhenOpened": "2024-05-30T19:05:08.769Z",
               "EditorCaption": ""
             },
             {
@@ -82,35 +64,33 @@
               "RelativeDocumentMoniker": "ViewModels\\HomeViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\ViewModels\\HomeViewModel.cs",
               "RelativeToolTip": "ViewModels\\HomeViewModel.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAAAP0AAAAIAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAA6wJcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:07:35.395Z",
+              "WhenOpened": "2024-05-30T18:40:30.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\LoginView.xaml",
-              "RelativeDocumentMoniker": "Views\\LoginView.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\LoginView.xaml",
-              "RelativeToolTip": "Views\\LoginView.xaml",
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\HomeView.xaml",
+              "RelativeDocumentMoniker": "Views\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\HomeView.xaml",
+              "RelativeToolTip": "Views\\HomeView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-28T19:40:21.499Z",
+              "WhenOpened": "2024-05-31T19:31:36.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "Models\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Models\\LoginModel.cs",
-              "RelativeToolTip": "Models\\LoginModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T18:53:11.476Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "DetailView.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\DetailView.xaml",
+              "RelativeDocumentMoniker": "Views\\DetailView.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\CodeMobileChallenge\\Views\\DetailView.xaml",
+              "RelativeToolTip": "Views\\DetailView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-30T18:42:34.34Z"
             }
           ]
         }

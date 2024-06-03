@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CodeMobileChallenge.ViewModels"
+        xmlns:local="clr-namespace:CodeMobileChallenge.Views"
         xmlns:helper="clr-namespace:CodeMobileChallenge.Helpers"
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800">
     <Page.Resources>
-        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <helper:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -28,7 +28,7 @@
         </Grid>
         <ComboBox Grid.Row="1" Width="300" Margin="0 0 0 10" HorizontalAlignment="Right"
           ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}" />
-        <DataGrid x:Name="ProductsDataGrid" Grid.Row="2" ItemsSource="{Binding FilteredProducts}" AutoGenerateColumns="False" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" EnableRowVirtualization="True" EnableColumnVirtualization="True" CanUserAddRows="False">
+        <DataGrid Grid.Row="2" x:Name="MyDataGrid" ItemsSource="{Binding FilteredProducts}" AutoGenerateColumns="False" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" EnableRowVirtualization="True" EnableColumnVirtualization="True" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
@@ -40,10 +40,10 @@
 
                 <DataGridTextColumn Header="ชื่อสินค้า" Binding="{Binding title}" Width="2*"/>
                 <DataGridTextColumn Header="ราคา" Binding="{Binding price}" Width="1*"/>
-                <DataGridTextColumn Header="สินค้าคงคลัง" Binding="{Binding stock}" Width="1*"/>
-                <DataGridTextColumn Header="ราคารวมต่อชิ้น" x:Name="test"
+                <DataGridTextColumn Header="คลัง" Binding="{Binding stock}" Width="1*"/>
+                <DataGridTextColumn Header="ราคารวมต่อชิ้น"
                     Binding="{Binding totalPrice, StringFormat={}{0:N}}"
-                    Visibility="{Binding IsTotalPriceVisible, Converter={StaticResource BoolToVisibilityConverter}}"
+                    Visibility="{Binding DataContext.IsTotalPriceVisible, Converter={StaticResource BoolToVisibilityConverter}}"
                     Width="1*" />
 
 
@@ -56,10 +56,6 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="3" Margin="10" >
-            <TextBlock Text="ราคารวมทั้งหมด: " FontWeight="Bold"/>
-            <TextBlock Text="{Binding TotalPrice, StringFormat={}{0:N}}" FontWeight="Bold"/>
-        </StackPanel>-->
         <TextBlock Grid.Row="3" HorizontalAlignment="Right" Margin="10" Text="{Binding TotalPriceMessage}" FontWeight="Bold" />
     </Grid>
 </Page>

@@ -7,4 +7,9 @@
         mc:Ignorable="d"
         Title="Product" Height="450" Width="800">
     <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+    </Window.Resources>
 </Window>

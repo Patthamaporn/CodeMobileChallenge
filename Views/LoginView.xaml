@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CodeMobileChallenge.Helpers"
+        xmlns:local="clr-namespace:CodeMobileChallenge.Views"
+        xmlns:helper="clr-namespace:CodeMobileChallenge.Helpers"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
@@ -26,8 +27,8 @@
 
         <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" VerticalAlignment="Center" Text="Password:" />
         <PasswordBox Grid.Row="2" Grid.Column="1" Margin="10"
-                     local:PasswordBoxHelper.BindPassword="True"
-                     local:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay}" />
+                     helper:PasswordBoxHelper.BindPassword="True"
+                     helper:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay}" />
 
         <Button Grid.Row="3" Grid.Column="1" Margin="10" Content="Login" Command="{Binding LoginCommand}" HorizontalAlignment="Right" />
 
